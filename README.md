@@ -71,9 +71,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### `Atomic Design` 
-Folder src : 
-pages `halaman ex: home, login, logout`.
-components `small component during developing`.
-utils `functions / repetitive`.
-assets `img, JSON, dummy`.
+Folder src : .\
+pages `halaman ex: home, login, logout`.\
+components `small component during developing`.\
+utils `functions / repetitive`.\
+assets `img, JSON, dummy`.\
 config `routing , API, firebase, etc`.
