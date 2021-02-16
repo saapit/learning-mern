@@ -70,12 +70,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-### `Atomic Design` 
+### `1-Atomic Design` 
 Folder src :-> \
-pages: `halaman ex: home, login, logout`.\
-    |--> icon. \
-    |--> image. \
-components: `small component during developing`.\
-utils: `functions / repetitive`.\
-assets: `img, JSON, dummy`.\
-config: `routing , API, firebase, etc`.
+pages: `halaman ex: home, login, logout.`\
+|>>Home \
+|>>Login \
+|>>Register \
+|++index.js : `Manage all pages.` \
+components: `small component during developing.`\
+utils: `functions / repetitive.`\
+assets: `img, JSON, dummy.`\
+|>>icon. \
+|>>image. \
+config: `routing , API, firebase, etc`\
+|>>Routes.\
+++index.js `import and export Routes.`\
+
+### `2-Routing`
+Link : https://reactrouter.com/\
+Choose web or native.\
+Install using yarn `yarn add react-router-dom`\
+Go to config folder, create Router folder -> index.js \
+
+
