@@ -70,11 +70,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-### Atomic Design 
-Folder src : {
-    -> pages (halaman ex: home, login, logout)
-    -> components (small component during developing)
-    -> utils (functions / repetitive)
-    -> assets (img, JSON, dummy)
-    ->config (routing , API, firebase, etc)
-}
+### `Atomic Design` 
+Folder src : 
+pages (halaman ex: home, login, logout)
+components (small component during developing)
+utils (functions / repetitive)
+assets (img, JSON, dummy)
+config (routing , API, firebase, etc)
