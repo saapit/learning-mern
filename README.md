@@ -79,7 +79,10 @@ Folder src :-> \
 ++index.js  `Manage all pages.` \
 --Components: `small component during developing.`\
 |>atoms\
+|>>Button\
+|>>Gap\
 |>>Input\
+|>>Link\
 ++index.js `manage atoms export component`\
 --Utils: `functions / repetitive.`\
 --Assets: `img, JSON, dummy.`\
