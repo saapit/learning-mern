@@ -72,18 +72,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### `1-Atomic Design` 
 Folder src :-> \
-pages: `halaman ex: home, login, logout.`\
-|>>Home \
-|>>Login \
-|>>Register \
-|++index.js : `Manage all pages.` \
-components: `small component during developing.`\
-utils: `functions / repetitive.`\
-assets: `img, JSON, dummy.`\
-|>>icon. \
-|>>image. \
-config: `routing , API, firebase, etc`\
-|>>Routes.\
+--Pages: `halaman ex: home, login, logout.`\
+|>Home \
+|>Login \
+|>Register \
+++index.js : `Manage all pages.` \
+--Components: `small component during developing.`\
+--Utils: `functions / repetitive.`\
+--Assets: `img, JSON, dummy.`\
+|>icon. \
+|>image. \
+--Config: `routing , API, firebase, etc`\
+|>Routes.\
 ++index.js `import and export Routes.`\
 
 ### `2-Routing`
