@@ -76,12 +76,16 @@ Folder src :-> \
 |>Home \
 |>Login \
 |>Register \
-++index.js : `Manage all pages.` \
+++index.js  `Manage all pages.` \
 --Components: `small component during developing.`\
+|>atoms\
+|>>Input\
+++index.js `manage atoms export component`\
 --Utils: `functions / repetitive.`\
 --Assets: `img, JSON, dummy.`\
 |>icon. \
 |>image. \
+++index.js `Manage all assets-import-export`\
 --Config: `routing , API, firebase, etc`\
 |>Routes.\
 ++index.js `import and export Routes.`\
@@ -91,5 +95,8 @@ Link : https://reactrouter.com/\
 Choose web or native.\
 Install using yarn `yarn add react-router-dom`\
 Go to config folder, create Router folder -> index.js \
+
+### `3-Scss`
+yarn add node-sass.\
 
 
