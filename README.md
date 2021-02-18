@@ -71,35 +71,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### `1-Atomic Design` 
-Folder src :-> \
---Pages: `halaman ex: home, login, logout.`\
-|>Home \
-|>Login \
-|>Register \
-++index.js  `Manage all pages.` \
---Components: `small component during developing.`\
-|>atoms\
-|>>Button\
-|>>Gap\
-|>>Input\
-|>>Link\
-++index.js `manage atoms export component`\
---Utils: `functions / repetitive.`\
---Assets: `img, JSON, dummy.`\
-|>icon. \
-|>image. \
-++index.js `Manage all assets-import-export`\
---Config: `routing , API, firebase, etc`\
-|>Routes.\
-++index.js `import and export Routes.`\
+To see design : `https://github1s.com/repo`\
+Check the pattern in folder src 
 
 ### `2-Routing`
-Link : https://reactrouter.com/\
+Link : https://reactrouter.com/. \
 Choose web or native.\
 Install using yarn `yarn add react-router-dom`\
-Go to config folder, create Router folder -> index.js \
+Go to config folder, create Router folder -> index.js\
 
 ### `3-Scss`
-yarn add node-sass.\
+yarn add node-sass.
 
 

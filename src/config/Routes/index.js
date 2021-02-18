@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {Login, Register, Home} from '../../pages';
+import {Login, Register, MainApp} from '../../pages';
 
 //rface
 const Routes = () => {
@@ -17,7 +17,7 @@ const Routes = () => {
                </Route>
                
                <Route path="/">
-                   <Home/>
+                   <MainApp/>
                </Route>
 
            </Switch>
