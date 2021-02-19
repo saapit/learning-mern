@@ -1,8 +1,10 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom';
 import { LoginBg } from '../../assets';
 import { Button, Input, Gap, Link } from '../../components';
 
 const Login = () => {
+    const history = useHistory()
     return (
         // sebab class name SCSS sama dgn register, jadi its global call "main-page"
         <div className="main-page"> 
@@ -15,9 +17,9 @@ const Login = () => {
             <Gap height={10}/>
             <Input label="Password" placeholder="Password"/>
             <Gap height={50}/>
-            <Button title="login"/>
+            <Button title="login" onClick={() => history.push('/')}/>
             <Gap height={100}/>
-            <Link title="Dont have account? Click here to register"/>
+            <Link title="Dont have account? Click here to register" onClick={() => history.push('/register')}/>
             </div>
         </div>
     )
