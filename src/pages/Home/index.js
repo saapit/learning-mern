@@ -4,6 +4,7 @@ import './home.scss';
 import {useHistory} from 'react-router-dom';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
+import { SetDataBlog } from '../../config/redux/action';
 
 const Home = () => {
     // const {dataBlogs, name} = useSelector(state => state);
@@ -14,21 +15,8 @@ const Home = () => {
 
 
     useEffect(() => {
-        axios.get('http://localhost:4000/v1/blog/posts?page=1&perPage=4')
-        .then(result => {
-            const responseAPI = result.data;
-
-            setTimeout(() => {
-                dispatch({
-                    type: 'UPDATE_DATA_BLOG',
-                    payload: responseAPI.data
-                })
-            }, 3000)
-        })
-        .catch(err => {
-            console.log('error', err);
-        })
-    }, [])
+        dispatch(SetDataBlog())
+    }, [dispatch])
     const history = useHistory();
     return (
         <div className="home-page-wrapper">
