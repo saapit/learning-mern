@@ -11,7 +11,7 @@ const Home = () => {
     const {dataBlog, page} = useSelector(state => state.homeReducer);
     const dispatch = useDispatch();
 
-    console.log('Page: ', page)
+    // console.log('Page: ', page)
 
     useEffect(() => {
         dispatch(SetDataBlog(counter))
@@ -22,11 +22,11 @@ const Home = () => {
     // button limit pagination logic
     const previous = () => {
         setCounter(counter <= 1 ? 1 : counter - 1);
-        console.log(counter);
+        // console.log(counter);
     }
     const next = () => {
         setCounter(counter === page.totalPage ? page.totalPage : counter + 1)
-        console.log(counter);
+        // console.log(counter);
 
     }
     return (
@@ -37,13 +37,16 @@ const Home = () => {
             <Gap height={20}/>
             <div className="content-wrapper">
                 {dataBlog.map(blog => {
-                    return <BlogItem key={blog._id}
-                    image={`http://localhost:4000/${blog.image}`} 
-                    title={blog.title}
-                    body={blog.body}
-                    name={blog.author.name}
-                    date={blog.createdAt}
-                    />
+                    return (
+                        <BlogItem key={blog._id}
+                        image={`http://localhost:4000/${blog.image}`} 
+                        title={blog.title}
+                        body={blog.body}
+                        name={blog.author.name}
+                        date={blog.createdAt}
+                        _id={blog._id}
+                        />
+                    )
                 })}
             </div>
             <div className="pagination">

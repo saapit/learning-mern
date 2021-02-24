@@ -4,7 +4,7 @@ export const SetDataBlog = (page) => (dispatch) => {
         axios.get(`http://localhost:4000/v1/blog/posts?page=${page}&perPage=4`)
         .then(result => {
             const responseAPI = result.data;
-            console.log('data API : ', responseAPI);
+            // console.log('data API : ', responseAPI);
             
             dispatch({
                 type: 'UPDATE_DATA_BLOG',

@@ -7,7 +7,7 @@ import { postToAPI, setForm, setImgPreview } from '../../config/redux/action';
 
 const CreateBlog = () => {
     const {form, imgPreview} = useSelector(state => state.createBlogReducer);
-    const {title, body, image} = form;
+    const {title, body} = form;
     const dispatch = useDispatch();
 
     const history = useHistory();
