@@ -83,4 +83,6 @@ Go to config folder, create Router folder -> index.js\
 ### `3-Scss`
 yarn add node-sass.
 
+### `delete-blog-post`
+link : https://www.npmjs.com/package/react-confirm-alert
 
